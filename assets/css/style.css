@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #a3c1ad;
+    --secondary-color: #fdfff5;
+    --tertiary-color:#918151;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+      color: var(--tertiary-color);
+      font-family:Georgia, 'Times New Roman', Times, serif
+  }
+
+  /* Header - Navigation Bar Style Starts */
+
+  header {
+      padding: 20px 40px;
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
+
+    header h1 {
+        display: inline-block;
+        font-weight: bold;
+        margin: 0;
+        font-size: 36px;
+        color: var(--primary-color);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    header nav {
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        list-style: none;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    header nav ul li a {
+        padding: 15px 20px;
+        font-size: 1.55vw;
+        font-weight: lighter;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header nav ul li a:hover {
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 15px;
+        text-shadow: none;
+    }
+      
+
+    .hero {
+        height: 800px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-image: url("../images/workspace.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        }
