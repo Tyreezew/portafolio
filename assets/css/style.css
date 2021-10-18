@@ -133,26 +133,37 @@
 
 .about-me {
     margin-bottom: 20px;
+    padding: 50px;
     height: 475px;
     background-color: var(--primary-color);
     width:100%;
     flex-wrap: wrap;
 }
 .content {
-        width: 100%;
-        display: inline-block;
-        margin-left: 20px;
-        position:absolute;
+    width: 100%;
+    display: inline-block;
+    position:absolute;
         
     }
 .about-me p{
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
-    margin: 0 auto;
+    margin: 2.5%;
     font-size: 20px;
-    text-align: center;
+    text-align: normal;
 }
+
+.about-me img {
+    max-height: 200px;
+    float: left;
+    margin-right: 25px;
+}
+
+/* ABOUT ME SECTION END */
+
+
+/* PROJECTS SECTION START */
 
 .projects {
     margin-bottom: 20px;
@@ -161,6 +172,15 @@
     background-color: var(--tertiary-color);
     width:100%;
     color: #fdfff5;
+}
+.project {
+    margin: 20px;
+    flex: 1;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+.project img {
+    width: 100%;
 }
 
 .work {
@@ -173,13 +193,18 @@
 
 .projects p {
     line-height: 1.7;
-    color: var(--tertiary-color);
+    color: var(--secondary-colorcolor);
     width: 80%;
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
 }
 
+
+/* PROJECTS SECTION END */
+
+
+/* CONTACT SECTION START */
 
 .contact {
     margin-bottom: 20px;
@@ -196,14 +221,19 @@
     position:absolute;
 }
 
-.contact p{
+.contact p {
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
+
+/* CONTACT SECTION END */
+
+
+/* SECTION TITLE START */
 
 .section-title {
     font-size: 36px;
@@ -222,3 +252,52 @@
   .secondary-border {
     border-color: var(--secondary-color);
   }
+
+  /* SECTION TITLE END */
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .hero-cta {
+        text-align: center;
+        width: 100%;
+      }
+    
+      .section-title {
+        width: 80%;
+      }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+
+@media screen and (max-width: 575px) {
+    .body{
+        
+    }
+}
+}
