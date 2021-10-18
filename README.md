@@ -7,7 +7,7 @@ Professional portfolio that will showcase my work/skills with employers and futu
 * CSS
 
 ## Website
-
+https://tyreezew.github.io/portafolio/
 
 
 ## Contribution
