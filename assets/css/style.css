@@ -158,6 +158,9 @@
     max-height: 200px;
     float: left;
     margin-right: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 /* ABOUT ME SECTION END */
@@ -208,7 +211,8 @@
 
 .contact {
     margin-bottom: 20px;
-    height: 475px;
+    padding: 50px;
+    height: 400px;
     background-color: var(--primary-color);
     width:100%;
     flex-wrap: wrap;
@@ -231,6 +235,35 @@
 }
 
 /* CONTACT SECTION END */
+
+ /* RESUME SECTION START*/
+
+ .resume {
+     margin: 0;
+     padding: 20px;
+     width: 100%;
+     height: 100%;
+     background-color: var(--tertiary-color);
+     display: flex;
+ }
+
+.form {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+}
+ .resume img {
+     display: block;
+     margin: 10px auto;
+     max-width: 150px;
+     display: center; 
+ }
+
+
+
 
 
 /* SECTION TITLE START */
@@ -295,9 +328,4 @@
     }
   
 
-@media screen and (max-width: 575px) {
-    .body{
-        
-    }
-}
-}
+@media screen and (max-width: 575px) 
